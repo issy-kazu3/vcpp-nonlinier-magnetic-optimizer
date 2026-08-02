@@ -44,3 +44,6 @@ All material properties, operating conditions, and dimensional parameters used i
    Extendable core modules
 
    Clean separation of I/O, solver, and evaluation logic
+
+# Repository Structure
+
