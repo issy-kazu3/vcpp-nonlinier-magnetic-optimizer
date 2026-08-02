@@ -4,9 +4,9 @@ A VC++ implementation for nonlinear magnetic circuit modeling, CSV‑driven para
 非線形磁気回路計算、CSV 駆動のパラメータ生成、大規模パラメトリック探索、および多目的最適化を行う VC++ 実装の磁気部品設計エンジンです。
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <img width="450" height="280" alt="DCDC"
+  <img width="400" height="250" alt="DCDC"
        src="https://github.com/user-attachments/assets/8c43c0fd-27ec-48da-b2e7-c4ad74b3a625" />
-  <img width="480" height="280" alt="tradeoff"
+  <img width="440" height="240" alt="tradeoff"
        src="https://github.com/user-attachments/assets/5d11899f-d6ad-4067-b04d-4ddd869752c7" />
 </div>
 
