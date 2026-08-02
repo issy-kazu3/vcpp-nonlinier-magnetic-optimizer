@@ -8,6 +8,7 @@ A VC++ implementation for nonlinear magnetic circuit modeling, CSV‑driven para
        src="https://github.com/user-attachments/assets/8c43c0fd-27ec-48da-b2e7-c4ad74b3a625" />
   <img width="440" height="240" alt="tradeoff"
        src="https://github.com/user-attachments/assets/5d11899f-d6ad-4067-b04d-4ddd869752c7" />
+  <img width="481" height="289" alt="DCbiassedL" src="https://github.com/user-attachments/assets/1a8f5f46-a3a2-4101-a10a-96154afa32b6" />
 </div>
 
 # Overview
@@ -25,6 +26,8 @@ It performs:
 
 All material properties, operating conditions, and dimensional parameters are fully abstracted and loaded from external CSV files.
 No confidential or product‑specific information is included.
+
+<img width="941" height="458" alt="input" src="https://github.com/user-attachments/assets/9c24b6d5-3d08-442a-b65e-7dc0eeef25de" />
 
 本リポジトリは、磁気部品設計に必要な以下の処理を自動化します：
 
@@ -100,6 +103,8 @@ No confidential or product‑specific information is included.
 
    Constraint filtering
 
+   DC biased inductance
+
    Ranking and extraction of top candidates
 
 - **非線形磁気モデル**
@@ -156,12 +161,15 @@ No confidential or product‑specific information is included.
 
    重量 vs 損失
 
+   インダクタンスの直流重畳特性
+
    制約フィルタリング
 
    上位仕様の抽出
   
 # Repository Structure
  ``` 
+
 MagneticCircuitOptimizer/
 │
 ├── docs/
