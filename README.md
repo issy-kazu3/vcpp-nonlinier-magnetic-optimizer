@@ -163,22 +163,10 @@ MagneticCircuitOptimizer/
 │   └── tradeoff_analysis.md
 │
 ├── src/
-│   ├── core/
-│   │   ├── MagneticModel.cpp        // BH curve handling, nonlinear L calculation
-│   │   ├── NonlinearSolver.cpp      // iterative solver for magnetic equations
-│   │   ├── ConstraintEvaluator.cpp  // dimension, weight, current, loss checks
-│   │   └── RatingEngine.cpp         // multi-objective ranking
-│   │
-│   ├── io/
-│   │   ├── CSVReader.cpp            // CSV-driven input loader
-│   │   ├── MaterialLoader.cpp       // material properties (abstracted)
-│   │   └── ConditionLoader.cpp      // operating conditions & thresholds
-│   │
-│   ├── app/
-│   │   └── main.cpp                 // entry point
-│   │
-│   └── utils/
-│       └── MathUtils.cpp            // helper math routines (optional)
+│   ├── CORECALC5XDoc.cpp        // Optimization calc engine
+│   ├── CalcArray.cpp      // Data structure
+│   ├── CalcData.cpp  // Conditions
+│   
 │
 ├── examples/
 │   ├── sample_materials.csv
