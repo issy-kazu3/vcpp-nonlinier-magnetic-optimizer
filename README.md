@@ -154,4 +154,40 @@ No confidential or product‑specific information is included.
    上位仕様の抽出
   
 # Repository Structure
-
+ ``` 
+MagneticCircuitOptimizer/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── algorithm_overview.md
+│   └── tradeoff_analysis.md
+│
+├── src/
+│   ├── core/
+│   │   ├── MagneticModel.cpp        // BH curve handling, nonlinear L calculation
+│   │   ├── NonlinearSolver.cpp      // iterative solver for magnetic equations
+│   │   ├── ConstraintEvaluator.cpp  // dimension, weight, current, loss checks
+│   │   └── RatingEngine.cpp         // multi-objective ranking
+│   │
+│   ├── io/
+│   │   ├── CSVReader.cpp            // CSV-driven input loader
+│   │   ├── MaterialLoader.cpp       // material properties (abstracted)
+│   │   └── ConditionLoader.cpp      // operating conditions & thresholds
+│   │
+│   ├── app/
+│   │   └── main.cpp                 // entry point
+│   │
+│   └── utils/
+│       └── MathUtils.cpp            // helper math routines (optional)
+│
+├── examples/
+│   ├── sample_materials.csv
+│   ├── sample_conditions.csv
+│   └── sample_parameters.csv
+│
+├── tests/
+│   ├── unit/
+│   └── integration/
+│
+└── README.md
+ ``` 
