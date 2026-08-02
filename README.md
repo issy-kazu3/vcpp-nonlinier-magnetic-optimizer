@@ -181,17 +181,14 @@ MagneticCircuitOptimizer/
 ├── src/
 │   ├── CORECALC5XDoc.cpp        // Optimization calc engine
 │   ├── CalcArray.cpp      // Data structure
-│   ├── CalcData.cpp  // Conditions
+│   └── CalcData.cpp  // Conditions
 │   
 │
 ├── input/
-│   ├── sample_materials.csv
-│   ├── sample_conditions.csv
-│   └── sample_parameters.csv
+│   └──  input_sample.csv
 │
-├── tests/
-│   ├── unit/
-│   └── integration/
+├── result/
+│   └── result_sample.csv
 │
 └── README.md
  ``` 
