@@ -1,49 +1,157 @@
 # vcpp-nonlinier-magnetic-optimizer
-This is a design optimization tool implemented in VC++ that automatically derives optimal specifications for magnetic components through characteristic calculations of non-linear magnetic circuits and extensive parametric searches.
+A VC++ implementation for nonlinear magnetic circuit modeling, CSV‑driven parameter generation, and large‑scale multi‑objective optimization of magnetic components.
 
-非線形磁気回路の特性計算と大量パラメトリック探索により、磁気部品の最適仕様を自動抽出する VC++ 実装の設計最適化ツールです。
+非線形磁気回路計算、CSV 駆動のパラメータ生成、大規模パラメトリック探索、および多目的最適化を行う VC++ 実装の磁気部品設計エンジンです。
 
 # Overview
 
 This repository provides a high‑performance optimization engine designed for magnetic component development.
-It performs nonlinear magnetic property calculations, large‑scale parametric sweeps, and multi‑objective evaluation (e.g., weight vs. loss), enabling automated extraction of optimal design candidates.
+It performs:
 
-All material properties, operating conditions, and dimensional parameters used in this repository are fully abstracted and do not contain any confidential or product‑specific information.
+- Nonlinear magnetic circuit computation based on BH curves loaded from CSV
 
-本リポジトリは、磁気部品設計における 非線形磁気特性の計算 と
-数万規模のパラメトリック探索 を高速に実行するための最適化エンジンを提供します。
+- Large‑scale parametric sweep across geometric and winding parameters
 
-材料物性、巻線仕様、寸法パラメータ、動作条件などを入力として、
-特性計算 → 制約判定 → 多目的評価（重量・損失など）を自動で行い、
-最適仕様を抽出する汎用的な設計支援フレームワークです。
+- Constraint‑based evaluation (dimensions, weight, current, loss, thermal limits)
 
-本リポジトリに含まれるデータはすべて 抽象化されたダミー値 であり、
-機密情報や製品固有情報は一切含まれていません。
+- Multi‑objective ranking to extract optimal design candidates
+
+All material properties, operating conditions, and dimensional parameters are fully abstracted and loaded from external CSV files.
+No confidential or product‑specific information is included.
+
+本リポジトリは、磁気部品設計に必要な以下の処理を自動化します：
+
+- **BH カーブを CSV から読み込む非線形磁気計算**
+
+- **6 次元パラメトリック探索（寸法・巻線・ギャップ・ターン数）**
+
+- **寸法・重量・損失・電流・熱量などの制約評価**
+
+- **多目的最適化による上位仕様の抽出**
+
+材料物性・運転条件・寸法パラメータはすべて 外部 CSV から読み込む抽象化データであり、
+機密情報は一切含まれていません。
 
 # Features
 - **Nonlinear Magnetic Modeling**
 
-   Supports B‑H characteristics
+   BH curve import from CSV
 
-   Gap structures and winding configurations
+   Nonlinear inductance calculation (Cal_L)
+
+   Magnetic flux density & field strength evaluation (Cal_BandH)
+
+   Gap reluctance and iron path modeling
+
+- **CSV‑Driven Architecture**
+
+   Material properties
+
+   BH curve data
+
+   Parameter ranges (gap, turns, dimensions)
+
+   Operating conditions
+
+   Constraint thresholds
 
 - **Large‑Scale Parametric Sweep**
 
-   Tens of thousands of design candidates evaluated automatically
+   Six‑dimensional exploration:
 
-   High‑speed computation using VC++
+     core height
+
+     core width
+
+     wire thickness
+
+     wire width
+
+     turns
+
+     gap
+
+   Tens of thousands of candidates evaluated automatically
+
+- **Constraint Evaluation**
+
+   Dimensional limits
+
+   Weight limit
+
+   Current limit
+
+   Loss limit (DC/AC copper loss, iron loss)
+
+   Thermal constraints
+
+   Minimum inductance requirements
 
 - **Multi‑Objective Optimization**
 
-   Weight, loss, and other metrics
+   Weight vs. loss
 
-   Constraint‑based filtering and ranking
+   Constraint filtering
 
-- **Modular VC++ Architecture**
+   Ranking and extraction of top candidates
 
-   Extendable core modules
+- **非線形磁気モデル**
 
-   Clean separation of I/O, solver, and evaluation logic
+   CSV から BH カーブを読み込み
 
+   Cal_L による非線形インダクタンス計算
+
+   Cal_BandH による磁束密度・磁界強度計算
+
+   ギャップ磁路・鉄磁路のモデル化
+
+- **CSV 駆動アーキテクチャ**
+
+   材料物性
+
+   BH カーブ
+
+   パラメータ範囲
+
+   運転条件
+
+   しきい値
+
+- **大規模パラメトリック探索（6 重ループ）**
+
+   コア高さ
+
+   コア幅
+
+   巻線厚み
+
+   巻線幅
+
+   ターン数
+
+   ギャップ
+
+- **制約評価**
+
+   寸法制約
+
+   重量制約
+
+   損失制約（DC/AC 銅損・鉄損）
+
+   電流制約
+
+   熱量制約
+
+   Lmin 制約
+
+- **多目的最適化**
+
+   重量 vs 損失
+
+   制約フィルタリング
+
+   上位仕様の抽出
+  
 # Repository Structure
 
