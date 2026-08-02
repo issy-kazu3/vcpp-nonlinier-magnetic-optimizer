@@ -21,26 +21,26 @@ All material properties, operating conditions, and dimensional parameters used i
 機密情報や製品固有情報は一切含まれていません。
 
 # Features
-Nonlinear Magnetic Modeling
+- **Nonlinear Magnetic Modeling**
 
-Supports B‑H characteristics
+   Supports B‑H characteristics
 
-Gap structures and winding configurations
+   Gap structures and winding configurations
 
-Large‑Scale Parametric Sweep
+- **Large‑Scale Parametric Sweep**
 
-Tens of thousands of design candidates evaluated automatically
+   Tens of thousands of design candidates evaluated automatically
 
-High‑speed computation using VC++
+   High‑speed computation using VC++
 
-Multi‑Objective Optimization
+- **Multi‑Objective Optimization**
 
-Weight, loss, and other metrics
+   Weight, loss, and other metrics
 
-Constraint‑based filtering and ranking
+   Constraint‑based filtering and ranking
 
-Modular VC++ Architecture
+- **Modular VC++ Architecture**
 
-Extendable core modules
+   Extendable core modules
 
-Clean separation of I/O, solver, and evaluation logic
+   Clean separation of I/O, solver, and evaluation logic
