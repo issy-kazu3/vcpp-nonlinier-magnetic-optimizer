@@ -191,3 +191,17 @@ MagneticCircuitOptimizer/
 │
 └── README.md
  ``` 
+
+# Build & Run
+Requirements
+Visual C++ (MSVC)
+
+# Notes
+This repository introduces a generalized approach to magnetic component optimization.
+
+No confidential material properties, operating conditions, or product specifications are included.
+
+All data is abstracted for demonstration purposes.
+
+# License
+MIT License
