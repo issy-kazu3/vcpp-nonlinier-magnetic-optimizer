@@ -1,14 +1,20 @@
 # vcpp-nonlinier-magnetic-optimizer
 A VC++ implementation for nonlinear magnetic circuit modeling, CSV‑driven parameter generation, and large‑scale multi‑objective optimization of magnetic components.
+The engine evaluates millions of design candidates and computes their dimensions, weight, losses, ripple current, flux, and DC‑biased inductance within a few hours.
+This optimizer does not rely on 3D FEM analysis.
+All evaluations are performed using a lightweight nonlinear magnetic circuit model,
+allowing millions of design candidates to be computed within a few hours.
 
-非線形磁気回路計算、CSV 駆動のパラメータ生成、大規模パラメトリック探索、および多目的最適化を行う VC++ 実装の磁気部品設計エンジンです。
+非線形磁気回路計算、CSV 駆動のパラメータ生成、大規模パラメトリック探索、および多目的最適化を行う VC++ 実装の磁気部品設計エンジンです。すべての抽出仕様における、寸法、重量、損失、電流および磁束のリプル、インダクタンスの直流重畳特性を、数時間で取得できます。
+本ツールは 3D-FEM 解析を一切使用していません。
+軽量な非線形磁気回路モデルにより、数百万件の仕様候補を数時間で評価できます。
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <img width="400" height="250" alt="DCDC"
+  <img width="300" height="200" alt="DCDC"
        src="https://github.com/user-attachments/assets/8c43c0fd-27ec-48da-b2e7-c4ad74b3a625" />
-  <img width="440" height="240" alt="tradeoff"
+  <img width="360" height="200" alt="tradeoff"
        src="https://github.com/user-attachments/assets/5d11899f-d6ad-4067-b04d-4ddd869752c7" />
-  <img width="481" height="289" alt="DCbiassedL" src="https://github.com/user-attachments/assets/1a8f5f46-a3a2-4101-a10a-96154afa32b6" />
+  <img width="300" height="200" alt="DCbiassedL" src="https://github.com/user-attachments/assets/1a8f5f46-a3a2-4101-a10a-96154afa32b6" />
 </div>
 
 # Overview
