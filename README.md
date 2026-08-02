@@ -178,18 +178,13 @@ No confidential or product‑specific information is included.
 
 MagneticCircuitOptimizer/
 │
-├── docs/
-│   ├── architecture.md
-│   ├── algorithm_overview.md
-│   └── tradeoff_analysis.md
-│
 ├── src/
 │   ├── CORECALC5XDoc.cpp        // Optimization calc engine
 │   ├── CalcArray.cpp      // Data structure
 │   ├── CalcData.cpp  // Conditions
 │   
 │
-├── examples/
+├── input/
 │   ├── sample_materials.csv
 │   ├── sample_conditions.csv
 │   └── sample_parameters.csv
